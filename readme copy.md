@@ -111,7 +111,7 @@ The `iam.tf` file defines IAM policies for the GCP project:
     data "google_iam_policy" "external-users" {
     # Data source for IAM policy with conditions...
     }
-
+```
 
 ###  Tasks
 A data science company I work for has all of its workloads running on one major cloud provider platform. The company uses cloud-managed services only, including a mixture of virtual machines and containers, databases, caches, and object storage.
