@@ -129,8 +129,7 @@ o	Users having no MFA on their accounts.
 o	Changes made to internal networking settings.
 
 
-![alt text](image.png)
-
+![alt text](image-1.png)
 
 ### Identity and Access Management (IAM) Escalation:
 
