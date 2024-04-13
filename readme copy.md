@@ -111,7 +111,26 @@ The `iam.tf` file defines IAM policies for the GCP project:
     data "google_iam_policy" "external-users" {
     # Data source for IAM policy with conditions...
     }
-```
+
+
+# Tasks
+A data science company I work for has all of its workloads running on one major cloud provider platform. The company uses cloud-managed services only, including a mixture of virtual machines and containers, databases, caches, and object storage.
+
+•	The company employs junior and senior developers and SREs, and deployments of code, as well as infrastructure, are automated as code. Only very few users should have administrative privileges on the cloud platform. Furthermore, the company’s cloud resources under my purview are meant to be internal only; there are no services meant to be exposed to the public.
+
+•	As a senior cloud security engineer, I was tasked with creating a system of continuous monitoring and automated remediations that cover but are not limited to the following cases:
+
+o	Identity and Access Management changes that result in privilege escalation (note: think about both users and service accounts, both internal and ones belonging to external services).
+
+o	Creating or modifying resources that are exposed to the public internet.
+
+o	Users having no MFA on their accounts.
+
+o	Changes made to internal networking settings.
+
+
+![alt text](image.png)
+
 
 ### Identity and Access Management (IAM) Escalation:
 
