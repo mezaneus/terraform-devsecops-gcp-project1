@@ -141,13 +141,13 @@ o	Changes made to internal networking settings.
 ### Identity and Access Management (IAM) Escalation:
 
 ### Use Case:
-A user accidentally grants excessive permissions to another user or service account, creating a privilege escalation risk.
+Remember, part of my tasked was creating a system of continuous monitoring and automated remediations that cover Identity and Access Management changes that result in privilege escalation. If A user accidentally grants excessive permissions to another user or service account, creating a privilege escalation risk.
 
 ### Automated Remediation:
 
-- Script: Utilize a script that continuously monitors IAM events for specific actions like granting admin privileges. Upon detection, automatically revoke the excessive permissions and notify administrators.
-- Cron job: Create a cron job that runs the script at regular intervals.
-- Justification: Scripting allows for immediate mitigation of privilege escalation attempts, minimizing potential damage.
+- Script:I utilize a script that continuously monitors IAM events for specific actions like granting admin privileges. Upon detection, automatically revoke the excessive permissions and notify administrators.
+- Cron job: I created a cron job that runs the script at regular ( 10 minute)intervals.
+- Justification: My reasoning here is that, scripting allows for immediate mitigation of privilege escalation attempts, minimizing potential damage.
 
 ### Exposed Public Resources:
 
