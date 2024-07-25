@@ -8,7 +8,7 @@ data "google_iam_policy" "admin" {
     role = "roles/owner"
 
     members = [
-      "user:tessydinma81@gmail.com",
+      "user:mezaneus@gmail.com",
     ]
   }
 }
