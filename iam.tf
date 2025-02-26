@@ -31,9 +31,9 @@ data "google_iam_policy" "external-users" {
     # Add other users as required
 
     condition {
-      title       = "expires_after_2024_12_31"
-      description = "Expiring at midnight of 2024-12-31"
-      expression  = "request.time < timestamp(\"2025-01-01T00:00:00Z\")"
+      title       = "expires_after_2025_12_31"
+      description = "Expiring at midnight of 2025-12-31"
+      expression  = "request.time < timestamp(\"2026-01-01T00:00:00Z\")"
     }
   }
 }
